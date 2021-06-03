@@ -1,2 +1,2 @@
---target=/usr/local/
+--target=${HOME}/.cache
 --no-folding

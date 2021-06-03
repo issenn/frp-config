@@ -34,13 +34,3 @@ _darcs
 \.editorconfig
 
 # Custom rules (everything added below won't be overriden by 'Generate .stow-local-ignore File' if you use 'Update' option)
-
-^/\.git-crypt
-\.gitattributes
-\.sops\.yaml
-.*\.gpg
-
-^/opt
-^/etc
-^/openwrt
-^/Library

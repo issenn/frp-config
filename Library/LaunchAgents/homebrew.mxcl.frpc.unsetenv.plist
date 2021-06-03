@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>homebrew.mxcl.frpc.unsetenv</string>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>ProgramArguments</key>
+    <array>
+      <string>sh</string>
+      <string>-l</string>
+      <string>-c</string>
+      <string>
+        /bin/launchctl unsetenv FRP_SERVER_ADDR
+        /bin/launchctl unsetenv FRP_SERVER_PORT
+        /bin/launchctl unsetenv FRP_USER
+        /bin/launchctl unsetenv FRP_TOKEN
+        /bin/launchctl unsetenv FRP_CUSTOM_DOMAINS
+        /bin/launchctl unsetenv FRP_SSH_REMOTE_PORT
+      </string>
+    </array>
+    <key>StandardErrorPath</key>
+    <string>/usr/local/var/log/frpc/services.unsetenv.err.log</string>
+    <key>StandardOutPath</key>
+    <string>/usr/local/var/log/frpc/services.unsetenv.out.log</string>
+  </dict>
+</plist>

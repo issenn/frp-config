@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>homebrew.mxcl.frpc.setenv</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>ProgramArguments</key>
+    <array>
+      <string>sh</string>
+      <string>-l</string>
+      <string>-c</string>
+      <string>/Users/issenn/.config/zsh/envs/launchd/frpc/launchd.frpc.set.env.zsh</string>
+    </array>
+    <key>StandardErrorPath</key>
+    <string>/usr/local/var/log/frpc/services.setenv.err.log</string>
+    <key>StandardOutPath</key>
+    <string>/usr/local/var/log/frpc/services.setenv.out.log</string>
+  </dict>
+</plist>
